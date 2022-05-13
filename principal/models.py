@@ -18,6 +18,8 @@ class Actividades(models.Model):
         managed = False
         db_table = 'actividades'
 
+    def __str__(self):
+        return (self.nombre_actividad)
 
 class Area(models.Model):
     idarea = models.AutoField(primary_key=True)

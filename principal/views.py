@@ -23,3 +23,4 @@ def contactar(request):
         send_mail(asunto, mensaje, email_desde, email_para, fail_silently=False)
         return render(request, "contactoExitoso.html")
     return render(request, "formularioContato.html")
+
